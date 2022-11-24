@@ -1,7 +1,7 @@
 on:
-push:
-  branches:
-    - two
+  push:
+    branches:
+      - two
 
 
 
@@ -13,4 +13,7 @@ jobs:
 
     steps:
       - name: 'Testing actions'
-        run: echo amira
+        run: pwd
+
+      - name: 'Testing actions'
+        run: echo ahmad
