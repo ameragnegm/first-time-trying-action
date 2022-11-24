@@ -1,1 +1,16 @@
+on:
+push:
+  branches:
+    - two
 
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: 'Testing actions'\
+        run: echo amira
