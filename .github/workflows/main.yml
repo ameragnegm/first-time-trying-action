@@ -13,6 +13,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: "login to docker"
         run: docker login --username ${{ secrets.USERNAME }} --password ${{ secrets.PASSWORD }}
+
+      - name: "building image"
+        run: docker build -t ${{ secrets.USERNAME }}/myimg .
+
+      - name: "pushing to docker"
+        run: docker push ${{ secrets.USERNAME }}/myimg
