@@ -12,8 +12,5 @@ jobs:
 
 
     steps:
-      - name: 'Testing actions'
-        run: pwd
-
-      - name: 'Testing actions'
-        run: echo ahmad
+      - name: 'print folder content'
+        run: ls
